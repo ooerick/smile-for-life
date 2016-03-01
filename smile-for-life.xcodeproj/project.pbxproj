@@ -12,6 +12,10 @@
 		C0931BBB1C85012200EA875D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0931BB91C85012200EA875D /* Main.storyboard */; };
 		C0931BBD1C85012200EA875D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0931BBC1C85012200EA875D /* Assets.xcassets */; };
 		C0931BC01C85012200EA875D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */; };
+		C0F9678A1C854D5E00A7A2BF /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967891C854D5E00A7A2BF /* EducationViewController.swift */; };
+		C0F967AC1C854EA900A7A2BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */; };
+		C0F967AE1C854ECA00A7A2BF /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */; };
+		C0F967B01C854EE500A7A2BF /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C0931BBC1C85012200EA875D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0931BBF1C85012200EA875D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0931BC11C85012200EA875D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F967891C854D5E00A7A2BF /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				C0931BB51C85012200EA875D /* AppDelegate.swift */,
 				C0931BB71C85012200EA875D /* ViewController.swift */,
+				C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */,
+				C0F967891C854D5E00A7A2BF /* EducationViewController.swift */,
+				C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */,
+				C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */,
 				C0931BB91C85012200EA875D /* Main.storyboard */,
 				C0931BBC1C85012200EA875D /* Assets.xcassets */,
 				C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */,
@@ -134,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F967B01C854EE500A7A2BF /* TimersViewController.swift in Sources */,
+				C0F967AE1C854ECA00A7A2BF /* NotificationsViewController.swift in Sources */,
+				C0F967AC1C854EA900A7A2BF /* CalendarViewController.swift in Sources */,
 				C0931BB81C85012200EA875D /* ViewController.swift in Sources */,
+				C0F9678A1C854D5E00A7A2BF /* EducationViewController.swift in Sources */,
 				C0931BB61C85012200EA875D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				C0931BC61C85012200EA875D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

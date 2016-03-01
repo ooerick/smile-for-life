@@ -50,7 +50,7 @@
         <!--calendar-->
         <scene sceneID="4tv-u9-O6a">
             <objects>
-                <viewController title="calendar" id="02P-N1-xGm" sceneMemberID="viewController">
+                <viewController title="calendar" id="02P-N1-xGm" customClass="CalendarViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4P9-UM-2rn"/>
                         <viewControllerLayoutGuide type="bottom" id="cL7-NJ-zn9"/>
@@ -71,7 +71,7 @@
         <!--education-->
         <scene sceneID="Kml-R9-s4F">
             <objects>
-                <viewController title="education" id="S1h-nK-y7O" sceneMemberID="viewController">
+                <viewController title="education" id="S1h-nK-y7O" customClass="EducationViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgt-bC-sxa"/>
                         <viewControllerLayoutGuide type="bottom" id="HOn-Pd-FgO"/>
@@ -114,7 +114,7 @@
         <!--notifications-->
         <scene sceneID="bCG-X1-4WO">
             <objects>
-                <viewController title="notifications" id="oA8-xw-LjL" sceneMemberID="viewController">
+                <viewController title="notifications" id="oA8-xw-LjL" customClass="NotificationsViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PIy-5K-BV1"/>
                         <viewControllerLayoutGuide type="bottom" id="IxB-zu-RGL"/>
@@ -135,7 +135,7 @@
         <!--timers-->
         <scene sceneID="1JE-xc-enI">
             <objects>
-                <viewController title="timers" id="8hd-z1-h1d" sceneMemberID="viewController">
+                <viewController title="timers" id="8hd-z1-h1d" customClass="TimersViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cpd-sU-rlG"/>
                         <viewControllerLayoutGuide type="bottom" id="E1b-f1-Bul"/>
