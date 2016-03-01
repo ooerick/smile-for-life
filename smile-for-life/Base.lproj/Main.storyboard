@@ -24,10 +24,6 @@
                                 <rect key="frame" x="20" y="293" width="180" height="185"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="education512" translatesAutoresizingMaskIntoConstraints="NO" id="F19-F3-PSt">
-                                <rect key="frame" x="214" y="293" width="180" height="185"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timers512" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-WC-zIq">
                                 <rect key="frame" x="214" y="486" width="180" height="185"/>
                                 <animations/>
@@ -36,11 +32,15 @@
                                 <rect key="frame" x="20" y="486" width="180" height="185"/>
                                 <animations/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="education512" translatesAutoresizingMaskIntoConstraints="NO" id="F19-F3-PSt">
+                                <rect key="frame" x="214" y="293" width="180" height="185"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="foF-TG-HnE"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_icon-Small" id="foF-TG-HnE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,7 +61,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="MXu-fU-4TX"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar_icon-Small" id="MXu-fU-4TX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8S-o7-ext" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +82,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Education" id="zPj-gC-dWC"/>
+                    <tabBarItem key="tabBarItem" title="Education" image="education_icon-Small" id="zPj-gC-dWC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gde-Zt-BSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +125,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alerts" id="Kq7-iI-eGk"/>
+                    <tabBarItem key="tabBarItem" title="Alerts" image="alerts_icon-Small" id="Kq7-iI-eGk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99k-Nn-vST" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,7 +146,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Timers" id="4CN-R2-Q2M"/>
+                    <tabBarItem key="tabBarItem" title="Timers" image="timer_icon-Small" id="4CN-R2-Q2M"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbK-F2-vPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,10 +155,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alerts_icon-Small" width="29" height="29"/>
         <image name="background_smile" width="250" height="444"/>
         <image name="calendar512" width="170" height="166"/>
+        <image name="calendar_icon-Small" width="29" height="29"/>
         <image name="education512" width="170" height="170"/>
+        <image name="education_icon-Small" width="29" height="29"/>
+        <image name="home_icon-Small" width="29" height="29"/>
         <image name="notifications" width="170" height="171"/>
+        <image name="timer_icon-Small" width="29" height="29"/>
         <image name="timers512" width="170" height="171"/>
     </resources>
 </document>
