@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NFS-Xo-XMt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="home" id="BYZ-38-t0r" customClass="ViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,42 +16,138 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_smile" translatesAutoresizingMaskIntoConstraints="NO" id="DwN-my-y5s">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar512" translatesAutoresizingMaskIntoConstraints="NO" id="9rH-5R-CKo">
                                 <rect key="frame" x="20" y="293" width="180" height="185"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="education512" translatesAutoresizingMaskIntoConstraints="NO" id="F19-F3-PSt">
-                                <rect key="frame" x="214" y="293" width="180" height="185"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timers512" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-WC-zIq">
                                 <rect key="frame" x="214" y="486" width="180" height="185"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notifications" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-5A-Jtf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notifications512" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-5A-Jtf">
                                 <rect key="frame" x="20" y="486" width="180" height="185"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="education512" translatesAutoresizingMaskIntoConstraints="NO" id="F19-F3-PSt">
+                                <rect key="frame" x="214" y="293" width="180" height="185"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_smile" translatesAutoresizingMaskIntoConstraints="NO" id="DwN-my-y5s">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sKB-SA-kWR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="calendarView" destination="9rH-5R-CKo" id="KHN-I9-uy3"/>
+                        <outlet property="educationView" destination="F19-F3-PSt" id="Wl8-st-ftb"/>
+                        <outlet property="notificationsView" destination="wMd-5A-Jtf" id="k8g-Ui-dju"/>
+                        <outlet property="timersView" destination="jiZ-WC-zIq" id="TBG-6v-29B"/>
+                        <segue destination="vXM-Ea-Msf" kind="custom" id="oaF-ak-HHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="389"/>
+            <point key="canvasLocation" x="566" y="17"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kdN-5z-ZHi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NFS-Xo-XMt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="d3k-FM-Bho">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Zv-Mv-Jfw" kind="relationship" relationship="viewControllers" id="OgX-WO-lRj"/>
+                        <segue destination="vXM-Ea-Msf" kind="relationship" relationship="viewControllers" id="QU3-3Q-L7j"/>
+                        <segue destination="H8U-SX-SL9" kind="relationship" relationship="viewControllers" id="J6u-lG-DKx"/>
+                        <segue destination="iAo-Tn-hV7" kind="relationship" relationship="viewControllers" id="bFg-mD-dWf"/>
+                        <segue destination="1qc-3d-4wM" kind="relationship" relationship="viewControllers" id="q7M-MC-5Le"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpg-p5-XGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-935" y="-2"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="M3u-JO-K4o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Education" id="vXM-Ea-Msf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bbb-hA-6FH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBD-Xh-QUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-915.5" y="582"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="T99-lq-TKQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calendar" id="H8U-SX-SL9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LIb-Dc-6n5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiJ-GZ-hW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1137.5" y="582"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="RVU-4J-oXE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="iAo-Tn-hV7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="h7K-tf-syp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeH-g5-wOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="582"/>
+        </scene>
+        <!--Timers-->
+        <scene sceneID="4UF-1h-ha9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Timers" id="1qc-3d-4wM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0EV-uY-OCH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbf-QY-RWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="582"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Cnx-qq-i50">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Zv-Mv-Jfw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home_icon-Small" id="foF-TG-HnE"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qAB-Hi-Mg6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P9P-xa-dl2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imR-VP-Wgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="17"/>
         </scene>
     </scenes>
     <resources>
         <image name="background_smile" width="250" height="444"/>
-        <image name="calendar512" width="170" height="166"/>
-        <image name="education512" width="170" height="170"/>
-        <image name="notifications" width="170" height="171"/>
-        <image name="timers512" width="170" height="171"/>
+        <image name="calendar512" width="170" height="170"/>
+        <image name="education512" width="169" height="168"/>
+        <image name="home_icon-Small" width="29" height="29"/>
+        <image name="notifications512" width="168" height="168"/>
+        <image name="timers512" width="169" height="169"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oaF-ak-HHe"/>
+    </inferredMetricsTieBreakers>
 </document>

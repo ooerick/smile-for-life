@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="02P-N1-xGm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+    </dependencies>
+    <scenes>
+        <!--calendar-->
+        <scene sceneID="4tv-u9-O6a">
+            <objects>
+                <viewController title="calendar" id="02P-N1-xGm" customClass="CalendarViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4P9-UM-2rn"/>
+                        <viewControllerLayoutGuide type="bottom" id="cL7-NJ-zn9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xP7-c0-0Bb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar_icon-Small" id="MXu-fU-4TX"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8S-o7-ext" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-627" y="-1282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar_icon-Small" width="29" height="29"/>
+    </resources>
+</document>
