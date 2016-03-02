@@ -47,7 +47,6 @@
                         <outlet property="educationView" destination="F19-F3-PSt" id="Wl8-st-ftb"/>
                         <outlet property="notificationsView" destination="wMd-5A-Jtf" id="k8g-Ui-dju"/>
                         <outlet property="timersView" destination="jiZ-WC-zIq" id="TBG-6v-29B"/>
-                        <segue destination="vXM-Ea-Msf" kind="custom" id="oaF-ak-HHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +146,4 @@
         <image name="notifications512" width="168" height="168"/>
         <image name="timers512" width="169" height="169"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="oaF-ak-HHe"/>
-    </inferredMetricsTieBreakers>
 </document>
