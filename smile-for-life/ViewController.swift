@@ -10,7 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var calendarView: UIImageView!
+  @IBOutlet weak var educationView: UIImageView!
+  @IBOutlet weak var timersView: UIImageView!
+  @IBOutlet weak var notificationsView: UIImageView!
+  
   override func viewDidLoad() {
+  
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
