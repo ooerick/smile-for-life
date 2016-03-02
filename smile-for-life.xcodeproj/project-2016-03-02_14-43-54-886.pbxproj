@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0931BB61C85012200EA875D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0931BB51C85012200EA875D /* AppDelegate.swift */; };
+		C0931BB81C85012200EA875D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0931BB71C85012200EA875D /* ViewController.swift */; };
+		C0931BBB1C85012200EA875D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0931BB91C85012200EA875D /* Main.storyboard */; };
+		C0931BBD1C85012200EA875D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0931BBC1C85012200EA875D /* Assets.xcassets */; };
+		C0931BC01C85012200EA875D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */; };
+		C0F9678A1C854D5E00A7A2BF /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967891C854D5E00A7A2BF /* EducationViewController.swift */; };
+		C0F967AC1C854EA900A7A2BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */; };
+		C0F967AE1C854ECA00A7A2BF /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */; };
+		C0F967B01C854EE500A7A2BF /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */; };
+		C0F967B51C8680E100A7A2BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F967B41C8680E100A7A2BF /* AudioToolbox.framework */; };
+		C0F967B81C869D4200A7A2BF /* Education.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F967B61C869D4200A7A2BF /* Education.storyboard */; };
+		C0F967BA1C869D7000A7A2BF /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F967B91C869D7000A7A2BF /* Calendar.storyboard */; };
+		C0F967BD1C869D9400A7A2BF /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F967BB1C869D9400A7A2BF /* Notifications.storyboard */; };
+		C0F967BF1C869DA700A7A2BF /* Timers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F967BE1C869DA700A7A2BF /* Timers.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0931BB21C85012200EA875D /* smile-for-life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smile-for-life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0931BB51C85012200EA875D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0931BB71C85012200EA875D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0931BBA1C85012200EA875D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0931BBC1C85012200EA875D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0931BBF1C85012200EA875D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0931BC11C85012200EA875D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F967891C854D5E00A7A2BF /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
+		C0F967B11C86809600A7A2BF /* smile-for-life.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "smile-for-life.entitlements"; sourceTree = "<group>"; };
+		C0F967B41C8680E100A7A2BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C0F967B71C869D4200A7A2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Education.storyboard; sourceTree = "<group>"; };
+		C0F967B91C869D7000A7A2BF /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		C0F967BC1C869D9400A7A2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notifications.storyboard; sourceTree = "<group>"; };
+		C0F967BE1C869DA700A7A2BF /* Timers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timers.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0931BAF1C85012200EA875D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F967B51C8680E100A7A2BF /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0931BA91C85012200EA875D = {
+			isa = PBXGroup;
+			children = (
+				C0F967B41C8680E100A7A2BF /* AudioToolbox.framework */,
+				C0931BB41C85012200EA875D /* smile-for-life */,
+				C0931BB31C85012200EA875D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0931BB31C85012200EA875D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0931BB21C85012200EA875D /* smile-for-life.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0931BB41C85012200EA875D /* smile-for-life */ = {
+			isa = PBXGroup;
+			children = (
+				C0F967B11C86809600A7A2BF /* smile-for-life.entitlements */,
+				C0931BB51C85012200EA875D /* AppDelegate.swift */,
+				C0931BB71C85012200EA875D /* ViewController.swift */,
+				C0931BB91C85012200EA875D /* Main.storyboard */,
+				C0F967BE1C869DA700A7A2BF /* Timers.storyboard */,
+				C0F967AF1C854EE500A7A2BF /* TimersViewController.swift */,
+				C0F967BB1C869D9400A7A2BF /* Notifications.storyboard */,
+				C0F967AD1C854ECA00A7A2BF /* NotificationsViewController.swift */,
+				C0F967B91C869D7000A7A2BF /* Calendar.storyboard */,
+				C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */,
+				C0F967B61C869D4200A7A2BF /* Education.storyboard */,
+				C0F967891C854D5E00A7A2BF /* EducationViewController.swift */,
+				C0931BBC1C85012200EA875D /* Assets.xcassets */,
+				C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */,
+				C0931BC11C85012200EA875D /* Info.plist */,
+			);
+			path = "smile-for-life";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0931BB11C85012200EA875D /* smile-for-life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0931BC41C85012200EA875D /* Build configuration list for PBXNativeTarget "smile-for-life" */;
+			buildPhases = (
+				C0931BAE1C85012200EA875D /* Sources */,
+				C0931BAF1C85012200EA875D /* Frameworks */,
+				C0931BB01C85012200EA875D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smile-for-life";
+			productName = "smile-for-life";
+			productReference = C0931BB21C85012200EA875D /* smile-for-life.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0931BAA1C85012200EA875D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Technology Speaks";
+				TargetAttributes = {
+					C0931BB11C85012200EA875D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VKZ8W52X9X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C0931BAD1C85012200EA875D /* Build configuration list for PBXProject "smile-for-life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0931BA91C85012200EA875D;
+			productRefGroup = C0931BB31C85012200EA875D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0931BB11C85012200EA875D /* smile-for-life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0931BB01C85012200EA875D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0931BC01C85012200EA875D /* LaunchScreen.storyboard in Resources */,
+				C0F967BF1C869DA700A7A2BF /* Timers.storyboard in Resources */,
+				C0931BBD1C85012200EA875D /* Assets.xcassets in Resources */,
+				C0931BBB1C85012200EA875D /* Main.storyboard in Resources */,
+				C0F967BD1C869D9400A7A2BF /* Notifications.storyboard in Resources */,
+				C0F967BA1C869D7000A7A2BF /* Calendar.storyboard in Resources */,
+				C0F967B81C869D4200A7A2BF /* Education.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0931BAE1C85012200EA875D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F967B01C854EE500A7A2BF /* TimersViewController.swift in Sources */,
+				C0F967AE1C854ECA00A7A2BF /* NotificationsViewController.swift in Sources */,
+				C0F967AC1C854EA900A7A2BF /* CalendarViewController.swift in Sources */,
+				C0931BB81C85012200EA875D /* ViewController.swift in Sources */,
+				C0F9678A1C854D5E00A7A2BF /* EducationViewController.swift in Sources */,
+				C0931BB61C85012200EA875D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0931BB91C85012200EA875D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0931BBA1C85012200EA875D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0931BBF1C85012200EA875D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F967B61C869D4200A7A2BF /* Education.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F967B71C869D4200A7A2BF /* Base */,
+			);
+			name = Education.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F967BB1C869D9400A7A2BF /* Notifications.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F967BC1C869D9400A7A2BF /* Base */,
+			);
+			name = Notifications.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0931BC21C85012200EA875D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0931BC31C85012200EA875D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0931BC51C85012200EA875D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "smile-for-life/smile-for-life.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "smile-for-life/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.technologyspeaks.smile-for-life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C0931BC61C85012200EA875D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "smile-for-life/smile-for-life.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "smile-for-life/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.technologyspeaks.smile-for-life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0931BAD1C85012200EA875D /* Build configuration list for PBXProject "smile-for-life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0931BC21C85012200EA875D /* Debug */,
+				C0931BC31C85012200EA875D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0931BC41C85012200EA875D /* Build configuration list for PBXNativeTarget "smile-for-life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0931BC51C85012200EA875D /* Debug */,
+				C0931BC61C85012200EA875D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0931BAA1C85012200EA875D /* Project object */;
+}
