@@ -9,7 +9,10 @@
 import UIKit
 
 class EducationViewController: UIViewController {
-
+    @IBOutlet weak var flossingTutorailButton: UIButton!
+    @IBOutlet weak var brushingTutorailButton: UIButton!
+    @IBOutlet weak var PhotosButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +25,16 @@ class EducationViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(sender: UIButton) {
+        performSegueWithIdentifier("detailView", sender: self)
     }
-    */
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//         Get the new view controller using segue.destinationViewController.
+//         Set the views data attribute
+//         Pass the selected object to the new view controller.
+    }
+
 
 }
