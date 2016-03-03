@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S1h-nK-y7O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zR7-d7-oFx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--education-->
@@ -13,16 +14,129 @@
                         <viewControllerLayoutGuide type="bottom" id="HOn-Pd-FgO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z6O-FP-8oJ">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-Up-Wug">
+                                <rect key="frame" x="20" y="256" width="130" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Vrw-Gt-C59"/>
+                                </constraints>
+                                <state key="normal" title="Flossing Tutorail"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="S1h-nK-y7O" eventType="touchUpInside" id="mCR-Tk-iNR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-NF-9dk">
+                                <rect key="frame" x="278" y="256" width="116" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Brushing Tutorial"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="S1h-nK-y7O" eventType="touchUpInside" id="JUd-dE-iM5"/>
+                                    <segue destination="Xa0-uB-Npc" kind="showDetail" identifier="detailView" id="p9R-Dg-4Hl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdD-3J-Jfo">
+                                <rect key="frame" x="152" y="385" width="111" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Real Life Photos"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="S1h-nK-y7O" eventType="touchUpInside" id="wYB-Us-loQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lmD-NF-9dk" firstAttribute="trailing" secondItem="z6O-FP-8oJ" secondAttribute="trailingMargin" id="Ae3-qD-6KB"/>
+                            <constraint firstItem="lmD-NF-9dk" firstAttribute="baseline" secondItem="sV7-Up-Wug" secondAttribute="baseline" id="IOG-2p-BCn"/>
+                            <constraint firstItem="HOn-Pd-FgO" firstAttribute="top" secondItem="jdD-3J-Jfo" secondAttribute="bottom" constant="208" id="MPa-rQ-pWE"/>
+                            <constraint firstItem="sV7-Up-Wug" firstAttribute="leading" secondItem="z6O-FP-8oJ" secondAttribute="leadingMargin" id="XxZ-Sq-cv9"/>
+                            <constraint firstItem="lmD-NF-9dk" firstAttribute="top" secondItem="Rgt-bC-sxa" secondAttribute="bottom" constant="236" id="Ygy-O5-CkK"/>
+                            <constraint firstItem="jdD-3J-Jfo" firstAttribute="centerX" secondItem="z6O-FP-8oJ" secondAttribute="centerX" id="chK-kc-NOk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Education" id="zWU-GX-eVv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="PhotosButton" destination="jdD-3J-Jfo" id="8xC-vW-9ha"/>
+                        <outlet property="brushingTutorailButton" destination="lmD-NF-9dk" id="9Q6-4E-jz6"/>
+                        <outlet property="flossingTutorailButton" destination="sV7-Up-Wug" id="iYh-V7-De1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gde-Zt-BSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="175"/>
+        </scene>
+        <!--Education Detail Table View Controller-->
+        <scene sceneID="iWu-qN-F2V">
+            <objects>
+                <tableViewController id="Xa0-uB-Npc" customClass="EducationDetailTableViewController" customModule="smile_for_life" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iCF-88-l7B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="edcell" textLabel="bpb-oh-yVV" detailTextLabel="vwi-8Z-jQz" style="IBUITableViewCellStyleSubtitle" id="9Sl-Ob-mva">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Sl-Ob-mva" id="E0A-sK-Suj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpb-oh-yVV">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vwi-8Z-jQz">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xa0-uB-Npc" id="qGZ-Oe-7Vl"/>
+                            <outlet property="delegate" destination="Xa0-uB-Npc" id="GfO-a3-u1K"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhv-Hu-NBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="175"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="zpY-Xs-fRM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zR7-d7-oFx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Education" image="education_icon-Small" id="zPj-gC-dWC"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gde-Zt-BSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="DYi-M1-irY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S1h-nK-y7O" kind="relationship" relationship="rootViewController" id="LMI-Pz-6hS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9Y-0B-RGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-349" y="175"/>
         </scene>

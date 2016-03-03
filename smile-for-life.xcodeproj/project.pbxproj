@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA760131C87E06E00A3B62B /* EducationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA760121C87E06E00A3B62B /* EducationDetailTableViewController.swift */; };
 		C0931BB61C85012200EA875D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0931BB51C85012200EA875D /* AppDelegate.swift */; };
 		C0931BB81C85012200EA875D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0931BB71C85012200EA875D /* ViewController.swift */; };
 		C0931BBB1C85012200EA875D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0931BB91C85012200EA875D /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AA760121C87E06E00A3B62B /* EducationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationDetailTableViewController.swift; sourceTree = "<group>"; };
 		C0931BB21C85012200EA875D /* smile-for-life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smile-for-life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0931BB51C85012200EA875D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0931BB71C85012200EA875D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				C0F967AB1C854EA900A7A2BF /* CalendarViewController.swift */,
 				C0F967B61C869D4200A7A2BF /* Education.storyboard */,
 				C0F967891C854D5E00A7A2BF /* EducationViewController.swift */,
+				2AA760121C87E06E00A3B62B /* EducationDetailTableViewController.swift */,
 				C0931BBC1C85012200EA875D /* Assets.xcassets */,
 				C0931BBE1C85012200EA875D /* LaunchScreen.storyboard */,
 				C0931BC11C85012200EA875D /* Info.plist */,
@@ -187,6 +190,7 @@
 				C0F967AE1C854ECA00A7A2BF /* NotificationsViewController.swift in Sources */,
 				C0F967AC1C854EA900A7A2BF /* CalendarViewController.swift in Sources */,
 				C0931BB81C85012200EA875D /* ViewController.swift in Sources */,
+				2AA760131C87E06E00A3B62B /* EducationDetailTableViewController.swift in Sources */,
 				C0F9678A1C854D5E00A7A2BF /* EducationViewController.swift in Sources */,
 				C0931BB61C85012200EA875D /* AppDelegate.swift in Sources */,
 			);
